@@ -9,6 +9,7 @@ app= Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP]) #stays consista
 #can create variable and then use markdown which appears as H1 header
 
 myTitle= dcc.Markdown(children="The Real Price of Joy: Does Money Buy Happiness?")
+myHeading= dcc.Markdown(children="An end-to-end data analysis project investigating the link between wealth and happiness", style={'fontSize': 21})
 
 #make layout, put components inside layout
 app.layout=dbc.Container([myTitle])
